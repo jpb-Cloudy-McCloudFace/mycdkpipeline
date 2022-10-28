@@ -32,6 +32,56 @@
             "loadNestedStacks": {}
           }
         }
+      },
+      "authmytodoapp3e538e90": {
+        "templateFile": "auth/mytodoapp3e538e90/mytodoapp3e538e90-cloudformation-template.json",
+        "parameters": {
+          "identityPoolName": "mytodoapp3e538e90_identitypool_3e538e90",
+          "allowUnauthenticatedIdentities": false,
+          "resourceNameTruncated": "mytodo3e538e90",
+          "userPoolName": "mytodoapp3e538e90_userpool_3e538e90",
+          "autoVerifiedAttributes": [
+            "email"
+          ],
+          "mfaConfiguration": "OFF",
+          "mfaTypes": [
+            "SMS Text Message"
+          ],
+          "smsAuthenticationMessage": "Your authentication code is {####}",
+          "smsVerificationMessage": "Your verification code is {####}",
+          "emailVerificationSubject": "Your verification code",
+          "emailVerificationMessage": "Your verification code is {####}",
+          "defaultPasswordPolicy": false,
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [],
+          "requiredAttributes": [
+            "email"
+          ],
+          "aliasAttributes": [],
+          "userpoolClientGenerateSecret": false,
+          "userpoolClientRefreshTokenValidity": 30,
+          "userpoolClientWriteAttributes": [
+            "email"
+          ],
+          "userpoolClientReadAttributes": [
+            "email"
+          ],
+          "userpoolClientLambdaRole": "mytodo3e538e90_userpoolclient_lambda_role",
+          "userpoolClientSetAttributes": false,
+          "sharedId": "3e538e90",
+          "resourceName": "mytodoapp3e538e90",
+          "authSelections": "identityPoolAndUserPool",
+          "useDefault": "default",
+          "userPoolGroupList": [],
+          "serviceName": "Cognito",
+          "usernameCaseSensitive": false,
+          "useEnabledMfas": true,
+          "breakCircularDependency": true,
+          "dependsOn": [],
+          "env": "dev"
+        },
+        "preserveLogicalIds": true,
+        "loadNestedStacks": {}
       }
     }
   }

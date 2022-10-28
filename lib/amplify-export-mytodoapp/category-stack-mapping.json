@@ -3,5 +3,10 @@
     "category": "api",
     "resourceName": "mytodoapp",
     "service": "AppSync"
+  },
+  {
+    "category": "auth",
+    "resourceName": "mytodoapp3e538e90",
+    "service": "Cognito"
   }
 ]
